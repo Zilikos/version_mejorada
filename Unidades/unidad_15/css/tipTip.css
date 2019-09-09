@@ -1,0 +1,292 @@
+/* TipTip CSS - Version 1.2 */
+.tooltipStarterThreeItem,
+.tooltipStarterOneItem,
+.tooltipStarter{
+	cursor: pointer;
+}
+.tooltipStarter:hover, .tooltipStarterOneItem:hover  {
+    text-decoration: underline !important;
+}
+input.tooltipStarter {
+    border: 1px solid #C0C0C0;
+}
+#tiptip_holder, 
+#tiptip_holder_one, 
+#tiptip_holder_three {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 89999;
+}
+/*
+General tooltip class. This class is for identify the tooltip on DOM
+*/
+#tiptip_holder.tip_top {
+	padding-bottom: 5px;
+}
+/*
+this is the declaration for the background image of the tooltip
+there is 3 declarations:
+tiptip_content: 		3 items.
+tiptip_content_2buttons 2 items.
+tiptip_content_1buttons 1 item.
+*/
+#tiptip_content{
+    background: transparent url("../../images/icons.png") no-repeat -81px -822px;
+    height: 59px;
+    width: 119px;
+}
+#tiptip_content_2buttons{
+    background: transparent url("../../images/icons.png") no-repeat -11px -600px;
+    width: 83px;
+    height: 60px;
+}
+#tiptip_content_1buttons{
+    background: transparent url("../../images/icons.png") no-repeat -5px -530px;
+    width: 46px;
+    height: 59px;
+}
+/*
+this is the declaration for centering items over background
+*/
+#tooltip_content_center{
+	margin: 0 auto;
+	width: 108px;
+	padding-top: 6px;
+}
+#tooltip_content_center_2buttons{
+	margin: 0 auto;
+	width: 71px;
+	padding-top: 6px;
+}
+#tooltip_content_center_1button{
+	margin: 0 auto;
+	width: 34px;
+	padding-top: 7px;
+}
+#tiptip_holder > #tiptip_content > #tooltip_content_center{
+    padding-left: 1px;
+}
+.marginRight3{
+    margin-right: 3px;
+}
+.marginLeft1{
+    margin-left: 1px;
+}
+/*
+this is the declaration for button item
+*/
+.buttonTooltip{
+    cursor: pointer;
+}
+#hear.buttonTooltip{
+    background: transparent url("../../images/icons.png") no-repeat -2px -161px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#hear.buttonTooltip:hover{
+    background: transparent url("../../images/icons.png") no-repeat -2px -232px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#record.buttonTooltip{
+    background: transparent url("../../images/icons.png") no-repeat -2px -196px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#record.buttonTooltip.BlinkTooltipBtns{
+    background: transparent url("../../images/icons.png") no-repeat -166px -272px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#record.buttonTooltip.BlinkTooltipBtns:hover{
+    background: transparent url("../../images/icons.png") no-repeat -166px -272px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#record.buttonTooltip:hover{
+    background: transparent url("../../images/icons.png") no-repeat -65px -719px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#compare.buttonTooltip{
+    background: transparent url("../../images/icons.png") no-repeat -37px -161px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#compare.buttonTooltip:hover{
+    background: transparent url("../../images/icons.png") no-repeat -25px -709px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#hear.buttonTooltip.buttonTooltip_audio_hold{
+    background: transparent url("../../images/icons.png") no-repeat -38px -196px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#record.buttonTooltip.buttonTooltip_audio_hold{
+    background: transparent url("../../images/icons.png") no-repeat -50px -114px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#record.buttonTooltip.buttonTooltip_audio_hold.BlinkTooltipBtns{
+    background: transparent url("../../images/icons.png") no-repeat -166px -272px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#compare.buttonTooltip.buttonTooltip_audio_hold{
+    background: transparent url("../../images/icons.png") no-repeat -37px -232px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#hear.buttonTooltip.buttonTooltip_rollover{
+    background: transparent url("../../images/icons.png") no-repeat -2px -232px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#record.buttonTooltip.buttonTooltip_rollover{
+    background: transparent url("../../images/icons.png") no-repeat -65px -719px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#compare.buttonTooltip.buttonTooltip_rollover{
+    background: transparent url("../../images/icons.png") no-repeat -25px -709px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#tooltip_content_center_2buttons.buttonTooltip_audio_hold > #compare.buttonTooltip{
+    background: transparent url("../../images/icons.png") no-repeat -166px -83px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#tooltip_content_center_2buttons > #compare.buttonTooltip.buttonTooltip_audio_hold{
+    background: transparent url("../../images/icons.png") no-repeat -166px -83px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#tooltip_content_center_2buttons > #compare.buttonTooltip{
+    background: transparent url("../../images/icons.png") no-repeat -166px -152px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#tooltip_content_center_2buttons > #compare.buttonTooltip:hover{
+    background: transparent url("../../images/icons.png") no-repeat -166px -118px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#tooltip_content_center_1button > #compare.buttonTooltip.buttonTooltip_audio_hold{
+    background: transparent url("../../images/icons.png") no-repeat -166px -83px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#tooltip_content_center_1button > #compare.buttonTooltip.buttonTooltip_audio_hold:hover{
+    background: transparent url("../../images/icons.png") no-repeat -166px -83px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#tooltip_content_center_1button > #compare.buttonTooltip{
+    background: transparent url("../../images/icons.png") no-repeat -166px -152px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+#tooltip_content_center_1button > #compare.buttonTooltip:hover{
+    background: transparent url("../../images/icons.png") no-repeat -166px -118px;
+    width: 33px;
+    height: 33px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+/*
+this is the class declaration for make transitions
+*/
+.buttonTooltip_rollover{
+	background-color: transparent;
+}
+.buttonTooltip_audio_hold{
+	background-color: transparent;
+}
+.buttonTooltip_press{
+	background-color: transparent !important;
+}
+.buttonTooltip img, .buttonTooltip_rollover  img{	
+	padding-top: 2px;
+	margin: 0 auto;
+	width: 28px;
+}
+.colorBackgroundHover{
+    background-color:  #ededed !important;
+}
+.colorBackgroundHoverInputOk{
+    background-color:  #d4f2d6 !important;
+}
+.colorBackgroundHoverInputNOOk{
+    background-color:  #f9bdbd !important;
+}

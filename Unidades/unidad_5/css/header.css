@@ -1,0 +1,77 @@
+header{
+   
+    background-color: #404b53;   
+    color: white;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+}
+
+
+.header-title{
+    height: inherit;
+}
+
+.header-title h2{
+    position: relative;
+    font-size: 20px;
+     top: 35%;    /* con esto estoy aliniedno al titul  */
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header a{
+    color: white;
+    text-decoration: brown;
+}
+.menu {
+    height: inherit;
+}
+
+header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    height: inherit;
+    
+}
+
+.header a{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: inherit;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    margin:  0;
+    
+}
+
+.container{
+      
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+

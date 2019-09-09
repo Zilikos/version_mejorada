@@ -1,0 +1,1001 @@
+/*!
+ * jQuery UI CSS Framework 1.8.22
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
+.ui-helper-clearfix:after { clear: both; }
+.ui-helper-clearfix { zoom: 1; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+/*!
+ * jQuery UI CSS Framework 1.8.22
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Trebuchet%20MS,%20Helvetica,%20Arial,%20sans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=6px&bgColorHeader=dddddd&bgTextureHeader=02_glass.png&bgImgOpacityHeader=35&borderColorHeader=bbbbbb&fcHeader=444444&iconColorHeader=999999&bgColorContent=c9c9c9&bgTextureContent=05_inset_soft.png&bgImgOpacityContent=50&borderColorContent=aaaaaa&fcContent=333333&iconColorContent=999999&bgColorDefault=eeeeee&bgTextureDefault=02_glass.png&bgImgOpacityDefault=60&borderColorDefault=cccccc&fcDefault=3383bb&iconColorDefault=70b2e1&bgColorHover=f8f8f8&bgTextureHover=02_glass.png&bgImgOpacityHover=100&borderColorHover=bbbbbb&fcHover=599fcf&iconColorHover=3383bb&bgColorActive=999999&bgTextureActive=06_inset_hard.png&bgImgOpacityActive=75&borderColorActive=999999&fcActive=ffffff&iconColorActive=454545&bgColorHighlight=eeeeee&bgTextureHighlight=01_flat.png&bgImgOpacityHighlight=55&borderColorHighlight=ffffff&fcHighlight=444444&iconColorHighlight=3383bb&bgColorError=c0402a&bgTextureError=01_flat.png&bgImgOpacityError=55&borderColorError=c0402a&fcError=ffffff&iconColorError=fbc856&bgColorOverlay=eeeeee&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=0&opacityOverlay=80&bgColorShadow=aaaaaa&bgTextureShadow=01_flat.png&bgImgOpacityShadow=0&opacityShadow=60&thicknessShadow=4px&offsetTopShadow=-4px&offsetLeftShadow=-4px&cornerRadiusShadow=0px
+ */
+
+
+/* Component containers
+----------------------------------*/
+#CampusModals .ui-widget { font-family: Trebuchet MS, Helvetica, Arial, sans-serif; font-size: 1.1em; }
+#CampusModals.ui-widget { font-family: Trebuchet MS, Helvetica, Arial, sans-serif; font-size: 1.1em; }
+#CampusModals .ui-widget .ui-widget { font-size: 1em; }
+#CampusModals .ui-widget input, #CampusModals #CampusModals .ui-widget select, #CampusModals .ui-widget textarea, #CampusModals .ui-widget button { font-family: Trebuchet MS, Helvetica, Arial, sans-serif; font-size: 1em; }
+#CampusModals .ui-widget-content { border: none !important; background-color: #fff !important; color: inherit !important; }
+#CampusModals.ui-widget-content { border: none !important; background-color: #fff !important; color: inherit !important; }
+#CampusModals .ui-widget-header { border: none !important; background-color: #fff !important; background: none !important; color: inherit !important; font-weight: normal !important; min-height: 25px; }
+#CampusModals.ui-widget-header { border: none !important; background-color: #fff !important; background: none !important; color: inherit !important; font-weight: normal !important; }
+/*.ui-widget-header a { color: #444444; }*/
+
+/* Interaction states
+----------------------------------*/
+#CampusModals .ui-state-default { border: 1px solid #cccccc; background: #eeeeee url(images/ui-bg_glass_60_eeeeee_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #3383bb; }
+#CampusModals .ui-state-default a, #CampusModals .ui-state-default a:link, #CampusModals .ui-state-default a:visited { color: #3383bb; text-decoration: none; }
+#CampusModals .ui-state-focus { border: 1px solid #bbbbbb; background: #f8f8f8 url(images/ui-bg_glass_100_f8f8f8_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #599fcf; }
+/*.ui-state-hover a,*/ /*.ui-state-hover a:hover { color: #599fcf; text-decoration: none; }*/
+#CampusModals .ui-state-active, /*.ui-widget-content .ui-state-active,*/ /*.ui-widget-header .ui-state-active { border: 1px solid #999999; background: #999999 url(images/ui-bg_inset-hard_75_999999_1x100.png) 50% 50% repeat-x; font-weight: bold; color: #ffffff; }*/
+#CampusModals .ui-state-active a, #CampusModals .ui-state-active a:link, #CampusModals .ui-state-active a:visited { color: #ffffff; text-decoration: none; }
+#CampusModals .ui-widget :active { outline: none; }
+
+/* Interaction Cues
+----------------------------------*/
+#CampusModals .ui-state-highlight, /*.ui-widget-content .ui-state-highlight,*/ /*.ui-widget-header .ui-state-highlight  {border: 1px solid #ffffff; background: #eeeeee url(images/ui-bg_flat_55_eeeeee_40x100.png) 50% 50% repeat-x; color: #444444; }*/
+#CampusModals .ui-state-highlight a, /*.ui-widget-content .ui-state-highlight a,*//*.ui-widget-header .ui-state-highlight a { color: #444444; }*/
+#CampusModals .ui-state-error, /*.ui-widget-content .ui-state-error,*/ /*.ui-widget-header .ui-state-error {border: 1px solid #c0402a; background: #c0402a url(images/ui-bg_flat_55_c0402a_40x100.png) 50% 50% repeat-x; color: #ffffff; }*/
+#CampusModals .ui-state-error a, /*.ui-widget-content .ui-state-error a,*/ /*.ui-widget-header .ui-state-error a { color: #ffffff; }*/
+#CampusModals .ui-state-error-text, /*.ui-widget-content .ui-state-error-text,*/ /*.ui-widget-header .ui-state-error-text { color: #ffffff; }*/
+#CampusModals .ui-priority-primary, /*.ui-widget-content .ui-priority-primary,*/ /*.ui-widget-header .ui-priority-primary { font-weight: bold; }*/
+#CampusModals .ui-priority-secondary, /*.ui-widget-content .ui-priority-secondary,*/  /*.ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }*/
+#CampusModals .ui-state-disabled, /*.ui-widget-content .ui-state-disabled,*/ /*.ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }*/
+
+    /* Icons
+    ----------------------------------*/
+
+    /* states and images */
+    /*.ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_999999_256x240.png); }*/
+    /*.ui-widget-content .ui-icon {background-image: url(images/ui-icons_999999_256x240.png); }*/
+    /*.ui-widget-header .ui-icon {background-image: url(images/ui-icons_999999_256x240.png); }*/
+#CampusModals .ui-widget-header .ui-icon {
+    background: url("../media/images/icons.png") -71px -237px no-repeat;
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+}
+#CampusModals .ui-widget-header .ui-icon:hover{
+    background-position: -71px -791px;
+}
+#CampusModals .ui-state-default .ui-icon { background-image: url(images/ui-icons_70b2e1_256x240.png); }
+/*.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background-image: url(images/ui-icons_3383bb_256x240.png); }*/
+#CampusModals .ui-state-active .ui-icon {background-image: url(images/ui-icons_454545_256x240.png); }
+#CampusModals .ui-state-highlight .ui-icon {background-image: url(images/ui-icons_3383bb_256x240.png); }
+#CampusModals .ui-state-error .ui-icon, #CampusModals .ui-state-error-text .ui-icon {background-image: url(images/ui-icons_fbc856_256x240.png); }
+
+/* positioning */
+#CampusModals .ui-icon-carat-1-n { background-position: 0 0; }
+#CampusModals .ui-icon-carat-1-ne { background-position: -16px 0; }
+#CampusModals .ui-icon-carat-1-e { background-position: -32px 0; }
+#CampusModals .ui-icon-carat-1-se { background-position: -48px 0; }
+#CampusModals .ui-icon-carat-1-s { background-position: -64px 0; }
+#CampusModals .ui-icon-carat-1-sw { background-position: -80px 0; }
+#CampusModals .ui-icon-carat-1-w { background-position: -96px 0; }
+#CampusModals .ui-icon-carat-1-nw { background-position: -112px 0; }
+#CampusModals .ui-icon-carat-2-n-s { background-position: -128px 0; }
+#CampusModals .ui-icon-carat-2-e-w { background-position: -144px 0; }
+#CampusModals .ui-icon-triangle-1-n { background-position: 0 -16px; }
+#CampusModals .ui-icon-triangle-1-ne { background-position: -16px -16px; }
+#CampusModals .ui-icon-triangle-1-e { background-position: -32px -16px; }
+#CampusModals .ui-icon-triangle-1-se { background-position: -48px -16px; }
+#CampusModals .ui-icon-triangle-1-s { background-position: -64px -16px; }
+#CampusModals .ui-icon-triangle-1-sw { background-position: -80px -16px; }
+#CampusModals .ui-icon-triangle-1-w { background-position: -96px -16px; }
+#CampusModals .ui-icon-triangle-1-nw { background-position: -112px -16px; }
+#CampusModals .ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+#CampusModals .ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+#CampusModals .ui-icon-arrow-1-n { background-position: 0 -32px; }
+#CampusModals .ui-icon-arrow-1-ne { background-position: -16px -32px; }
+#CampusModals .ui-icon-arrow-1-e { background-position: -32px -32px; }
+#CampusModals .ui-icon-arrow-1-se { background-position: -48px -32px; }
+#CampusModals .ui-icon-arrow-1-s { background-position: -64px -32px; }
+#CampusModals .ui-icon-arrow-1-sw { background-position: -80px -32px; }
+#CampusModals .ui-icon-arrow-1-w { background-position: -96px -32px; }
+#CampusModals .ui-icon-arrow-1-nw { background-position: -112px -32px; }
+#CampusModals .ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+#CampusModals .ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+#CampusModals .ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+#CampusModals .ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+#CampusModals .ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+#CampusModals .ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+#CampusModals .ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+#CampusModals .ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+#CampusModals .ui-icon-arrowthick-1-n { background-position: 0 -48px; }
+#CampusModals .ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+#CampusModals .ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+#CampusModals .ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+#CampusModals .ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+#CampusModals .ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+#CampusModals .ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+#CampusModals .ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+#CampusModals .ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+#CampusModals .ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+#CampusModals .ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+#CampusModals .ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+#CampusModals .ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+#CampusModals .ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+#CampusModals .ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+#CampusModals .ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+#CampusModals .ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+#CampusModals .ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+#CampusModals .ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+#CampusModals .ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+#CampusModals .ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+#CampusModals .ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+#CampusModals .ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+#CampusModals .ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+#CampusModals .ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+#CampusModals .ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+#CampusModals .ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+#CampusModals .ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+#CampusModals .ui-icon-arrow-4 { background-position: 0 -80px; }
+#CampusModals .ui-icon-arrow-4-diag { background-position: -16px -80px; }
+#CampusModals .ui-icon-extlink { background-position: -32px -80px; }
+#CampusModals .ui-icon-newwin { background-position: -48px -80px; }
+#CampusModals .ui-icon-refresh { background-position: -64px -80px; }
+#CampusModals .ui-icon-shuffle { background-position: -80px -80px; }
+#CampusModals .ui-icon-transfer-e-w { background-position: -96px -80px; }
+#CampusModals .ui-icon-transferthick-e-w { background-position: -112px -80px; }
+#CampusModals .ui-icon-folder-collapsed { background-position: 0 -96px; }
+#CampusModals .ui-icon-folder-open { background-position: -16px -96px; }
+#CampusModals .ui-icon-document { background-position: -32px -96px; }
+#CampusModals .ui-icon-document-b { background-position: -48px -96px; }
+#CampusModals .ui-icon-note { background-position: -64px -96px; }
+#CampusModals .ui-icon-mail-closed { background-position: -80px -96px; }
+#CampusModals .ui-icon-mail-open { background-position: -96px -96px; }
+#CampusModals .ui-icon-suitcase { background-position: -112px -96px; }
+#CampusModals .ui-icon-comment { background-position: -128px -96px; }
+#CampusModals .ui-icon-person { background-position: -144px -96px; }
+#CampusModals .ui-icon-print { background-position: -160px -96px; }
+#CampusModals .ui-icon-trash { background-position: -176px -96px; }
+#CampusModals .ui-icon-locked { background-position: -192px -96px; }
+#CampusModals .ui-icon-unlocked { background-position: -208px -96px; }
+#CampusModals .ui-icon-bookmark { background-position: -224px -96px; }
+#CampusModals .ui-icon-tag { background-position: -240px -96px; }
+#CampusModals .ui-icon-home { background-position: 0 -112px; }
+#CampusModals .ui-icon-flag { background-position: -16px -112px; }
+#CampusModals .ui-icon-calendar { background-position: -32px -112px; }
+#CampusModals .ui-icon-cart { background-position: -48px -112px; }
+#CampusModals .ui-icon-pencil { background-position: -64px -112px; }
+#CampusModals .ui-icon-clock { background-position: -80px -112px; }
+#CampusModals .ui-icon-disk { background-position: -96px -112px; }
+#CampusModals .ui-icon-calculator { background-position: -112px -112px; }
+#CampusModals .ui-icon-zoomin { background-position: -128px -112px; }
+#CampusModals .ui-icon-zoomout { background-position: -144px -112px; }
+#CampusModals .ui-icon-search { background-position: -160px -112px; }
+#CampusModals .ui-icon-wrench { background-position: -176px -112px; }
+#CampusModals .ui-icon-gear { background-position: -192px -112px; }
+#CampusModals .ui-icon-heart { background-position: -208px -112px; }
+#CampusModals .ui-icon-star { background-position: -224px -112px; }
+#CampusModals .ui-icon-link { background-position: -240px -112px; }
+#CampusModals .ui-icon-cancel { background-position: 0 -128px; }
+#CampusModals .ui-icon-plus { background-position: -16px -128px; }
+#CampusModals .ui-icon-plusthick { background-position: -32px -128px; }
+#CampusModals .ui-icon-minus { background-position: -48px -128px; }
+#CampusModals .ui-icon-minusthick { background-position: -64px -128px; }
+#CampusModals .ui-icon-close { background-position: -80px -128px; }
+/*.ui-icon-closethick { background-position: -96px -128px; }*/
+#CampusModals .ui-icon-key { background-position: -112px -128px; }
+#CampusModals .ui-icon-lightbulb { background-position: -128px -128px; }
+#CampusModals .ui-icon-scissors { background-position: -144px -128px; }
+#CampusModals .ui-icon-clipboard { background-position: -160px -128px; }
+#CampusModals .ui-icon-copy { background-position: -176px -128px; }
+#CampusModals .ui-icon-contact { background-position: -192px -128px; }
+#CampusModals .ui-icon-image { background-position: -208px -128px; }
+#CampusModals .ui-icon-video { background-position: -224px -128px; }
+#CampusModals .ui-icon-script { background-position: -240px -128px; }
+#CampusModals .ui-icon-alert { background-position: 0 -144px; }
+#CampusModals .ui-icon-info { background-position: -16px -144px; }
+#CampusModals .ui-icon-notice { background-position: -32px -144px; }
+#CampusModals .ui-icon-help { background-position: -48px -144px; }
+#CampusModals .ui-icon-check { background-position: -64px -144px; }
+#CampusModals .ui-icon-bullet { background-position: -80px -144px; }
+#CampusModals .ui-icon-radio-off { background-position: -96px -144px; }
+#CampusModals .ui-icon-radio-on { background-position: -112px -144px; }
+#CampusModals .ui-icon-pin-w { background-position: -128px -144px; }
+#CampusModals .ui-icon-pin-s { background-position: -144px -144px; }
+#CampusModals .ui-icon-play { background-position: 0 -160px; }
+#CampusModals .ui-icon-pause { background-position: -16px -160px; }
+#CampusModals .ui-icon-seek-next { background-position: -32px -160px; }
+#CampusModals .ui-icon-seek-prev { background-position: -48px -160px; }
+#CampusModals .ui-icon-seek-end { background-position: -64px -160px; }
+#CampusModals .ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+#CampusModals .ui-icon-seek-first { background-position: -80px -160px; }
+#CampusModals .ui-icon-stop { background-position: -96px -160px; }
+#CampusModals .ui-icon-eject { background-position: -112px -160px; }
+#CampusModals .ui-icon-volume-off { background-position: -128px -160px; }
+#CampusModals .ui-icon-volume-on { background-position: -144px -160px; }
+#CampusModals .ui-icon-power { background-position: 0 -176px; }
+#CampusModals .ui-icon-signal-diag { background-position: -16px -176px; }
+#CampusModals .ui-icon-signal { background-position: -32px -176px; }
+#CampusModals .ui-icon-battery-0 { background-position: -48px -176px; }
+#CampusModals .ui-icon-battery-1 { background-position: -64px -176px; }
+#CampusModals .ui-icon-battery-2 { background-position: -80px -176px; }
+#CampusModals .ui-icon-battery-3 { background-position: -96px -176px; }
+#CampusModals .ui-icon-circle-plus { background-position: 0 -192px; }
+#CampusModals .ui-icon-circle-minus { background-position: -16px -192px; }
+#CampusModals .ui-icon-circle-close { background-position: -32px -192px; }
+#CampusModals .ui-icon-circle-triangle-e { background-position: -48px -192px; }
+#CampusModals .ui-icon-circle-triangle-s { background-position: -64px -192px; }
+#CampusModals .ui-icon-circle-triangle-w { background-position: -80px -192px; }
+#CampusModals .ui-icon-circle-triangle-n { background-position: -96px -192px; }
+#CampusModals .ui-icon-circle-arrow-e { background-position: -112px -192px; }
+#CampusModals .ui-icon-circle-arrow-s { background-position: -128px -192px; }
+#CampusModals .ui-icon-circle-arrow-w { background-position: -144px -192px; }
+#CampusModals .ui-icon-circle-arrow-n { background-position: -160px -192px; }
+#CampusModals .ui-icon-circle-zoomin { background-position: -176px -192px; }
+#CampusModals .ui-icon-circle-zoomout { background-position: -192px -192px; }
+#CampusModals .ui-icon-circle-check { background-position: -208px -192px; }
+#CampusModals .ui-icon-circlesmall-plus { background-position: 0 -208px; }
+#CampusModals .ui-icon-circlesmall-minus { background-position: -16px -208px; }
+#CampusModals .ui-icon-circlesmall-close { background-position: -32px -208px; }
+#CampusModals .ui-icon-squaresmall-plus { background-position: -48px -208px; }
+#CampusModals .ui-icon-squaresmall-minus { background-position: -64px -208px; }
+#CampusModals .ui-icon-squaresmall-close { background-position: -80px -208px; }
+#CampusModals .ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+#CampusModals .ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+#CampusModals .ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+#CampusModals .ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+#CampusModals .ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+#CampusModals .ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+
+#CampusModals .ui-corner-all, #CampusModals .ui-corner-top, #CampusModals .ui-corner-left, #CampusModals .ui-corner-tl { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+#CampusModals .ui-corner-all, #CampusModals .ui-corner-top, #CampusModals .ui-corner-right, #CampusModals .ui-corner-tr { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+#CampusModals .ui-corner-all, #CampusModals .ui-corner-bottom, #CampusModals .ui-corner-left, #CampusModals .ui-corner-bl { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+#CampusModals .ui-corner-all, #CampusModals .ui-corner-bottom, #CampusModals .ui-corner-right, #CampusModals .ui-corner-br { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+
+#CampusModals.ui-corner-all, #CampusModals.ui-corner-top, #CampusModals.ui-corner-left, #CampusModals.ui-corner-tl { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+#CampusModals.ui-corner-all, #CampusModals.ui-corner-top, #CampusModals.ui-corner-right, #CampusModals.ui-corner-tr { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+#CampusModals.ui-corner-all, #CampusModals.ui-corner-bottom, #CampusModals.ui-corner-left, #CampusModals.ui-corner-bl { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+#CampusModals.ui-corner-all, #CampusModals.ui-corner-bottom, #CampusModals.ui-corner-right, #CampusModals.ui-corner-br { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+
+#CampusModals.ui-corner-all, #CampusModals.ui-corner-bottom, #CampusModals.ui-corner-right, #CampusModals.ui-corner-br { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+#CampusModals.ui-corner-all, #CampusModals.ui-corner-bottom, #CampusModals.ui-corner-left, #CampusModals.ui-corner-bl { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+#CampusModals.ui-corner-all, #CampusModals.ui-corner-top, #CampusModals.ui-corner-right, #CampusModals.ui-corner-tr { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+#CampusModals.ui-corner-all, #CampusModals.ui-corner-top, #CampusModals.ui-corner-left, #CampusModals.ui-corner-tl { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+
+#CampusModals .ui-corner-all, #CampusModals .ui-corner-bottom, #CampusModals .ui-corner-right, #CampusModals .ui-corner-br { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+#CampusModals .ui-corner-all, #CampusModals .ui-corner-bottom, #CampusModals .ui-corner-left, #CampusModals .ui-corner-bl { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+#CampusModals .ui-corner-all, #CampusModals .ui-corner-top, #CampusModals .ui-corner-right, #CampusModals .ui-corner-tr { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+#CampusModals .ui-corner-all, #CampusModals .ui-corner-top, #CampusModals .ui-corner-left, #CampusModals .ui-corner-tl { -moz-border-radius: 0px !important; -webkit-border-radius: 0px !important; -khtml-border-radius: 0px !important; border-radius: 0px !important; }
+
+/* Overlays */
+.ui-widget-overlay { background: url("../media/images/fondoModal.png") repeat !important; background-repeat: repeat !important; opacity: 1 !important; filter:Alpha(Opacity=100) !important; }
+#CampusModals .ui-widget-shadow { /*margin: -4px 0 0 -4px; padding: 4px; background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .60;filter:Alpha(Opacity=60); -moz-border-radius: 0px; -khtml-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px;*/ }/*!
+ * jQuery UI Resizable 1.8.22
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Resizable#theming
+ */
+#CampusModals .ui-resizable { position: relative;}
+#CampusModals .ui-resizable-handle { position: absolute;font-size: 0.1px; display: block; }
+#CampusModals .ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+#CampusModals .ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+#CampusModals .ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+#CampusModals .ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+#CampusModals .ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+#CampusModals .ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+#CampusModals .ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+#CampusModals .ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+#CampusModals .ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}
+#CampusModals .ui-dialog-titlebar.ui-widget-header{
+    width: auto !important;
+    background-color: transparent !important;
+    height: 28px !important;
+}
+#CampusModals .ui-dialog-titlebar.ui-widget-header > a{
+    width: 600px !important;
+    background-color: transparent !important;
+    height: 28px !important;
+    border: none;
+    text-decoration: none !important;
+}
+#CampusModals .ui-widget-header a{
+    border: none !important;
+}
+/*!
+ * jQuery UI Dialog 1.8.22
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Dialog#theming
+ */
+#CampusModals.ui-dialog { position: absolute; padding-top: 10px; padding-right: 20px; padding-left: 20px;/*padding: .2em;*/ width: 300px; overflow: hidden; background-color: #fff; }
+#CampusModals.ui-dialog .ui-dialog-titlebar { padding: 0 !important; position: relative;  }
+#CampusModals .ui-dialog-titlebar { padding: 0 !important; position: relative;  }
+#CampusModals.ui-dialog .ui-dialog-title { /*float: left; margin: .1em 16px .1em 0;*/ }
+#CampusModals.ui-dialog .ui-dialog-titlebar-close { position: static !important; right: 0 !important; top: 0 !important; width: available !important; margin: 0 0 0 0 !important; padding: 0px !important; height: available !important; }
+#CampusModals .ui-dialog .ui-dialog-titlebar-close { position: static !important; right: 0 !important; top: 0 !important; width: available !important; margin: 0 0 0 0 !important; padding: 0px !important; height: available !important; }
+/*#CampusModals.ui-dialog .ui-dialog-titlebar-close span { display: inline !important; margin: 0px !important; }*/
+#CampusModals.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0 !important; }
+#CampusModals.ui-dialog .ui-dialog-content { position: relative; border: 0; padding: 0 !important; background: none; overflow: auto; /*zoom: 1;*/ }
+#CampusModals.ui-dialog .ui-dialog-buttonpane { text-align: left; /*border-width: 1px 0 0 0;*/ background-image: none; /*margin: .5em 0 0 0; padding: .3em 1em .5em .4em;*/ }
+#CampusModals.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: right; }
+#CampusModals.ui-dialog .ui-dialog-buttonpane button { /*margin: .5em .4em .5em 0;*/ cursor: pointer; }
+#CampusModals.ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+#CampusModals .ui-draggable .ui-dialog-titlebar { cursor: default !important; }
+#CampusModals.ui-draggable .ui-dialog-titlebar { cursor: default !important; }
+
+#CampusModals .cerraricon{
+    background-color: transparent;
+    background-image: url("../media/images/cerrarayuda.png");
+    background-repeat: no-repeat;
+    height: 28px;
+    width: 28px;
+    float: right;
+    cursor: pointer;
+}
+#CampusModals .helpContainer{
+    width: 630px;
+    padding-bottom: 15px;
+    position: relative;
+    padding-left: 38px;
+    padding-right: 7px;
+}
+#CampusModals .pcerrar{
+    margin-top: 16px;
+}
+#CampusModals .clear{
+    clear: both;
+}
+#CampusModals .comenzarcurso{
+    background-color: transparent;
+    background-image: url("../media/images/backgrounds.png");
+    background-position: 0 -67px;
+    background-repeat: repeat-x;
+    height: 40px;
+    width: 597px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+    font-family: 'MuseoSlab900Regular';
+    font-size: 20px;
+}
+#CampusModals .comenzarcurso:hover{
+    background-position: 0 -409px;
+}
+#CampusModals .comprendetext{
+    width: 612px;
+}
+#CampusModals .marginBottom15{
+    margin-bottom: 15px;
+}
+#CampusModals .marginBottom21{
+    margin-bottom: 21px;
+}
+#CampusModals .marginBottom18{
+    margin-bottom: 18px;
+}
+#CampusModals .marginBottom24{
+    margin-bottom: 24px;
+}
+#CampusModals .marginBottom47{
+    margin-bottom: 47px;
+}
+#CampusModals .cerrarSiempre{
+    position: absolute;
+    bottom: 28px;
+    right: 19px;
+}
+#CampusModals .linksAyuda{
+    text-decoration: underline;
+    color: #0397d6;
+    cursor: pointer;
+    font-family: 'MuseoSlab500';
+    font-size: 14px;
+}
+#CampusModals .saludo{
+    color: #a40038;
+    font-size: 18px;
+    font-family: 'museo_slab_700regular';
+    padding-top: 0 !important;
+}
+#CampusModals .colortextayuda{
+    color: #455560;
+    font-family: 'MuseoSans500Regular';
+    font-size: 13px;
+    line-height: 18px;
+    padding: 0 !important;
+}
+#CampusModals .imagenCentrada{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+#CampusModals .marginRight31{
+    margin-right: 31px;
+}
+#CampusModals .marginRight7{
+    margin-right: 7px;
+}
+#CampusModals .divPasos{
+    float: left;
+    width: 194px;
+    text-align: center;
+}
+#CampusModals .paso1icon{
+    background-color: transparent;
+    background-image: url("../media/images/icons.png");
+    background-repeat: no-repeat;
+    background-position: -62px -538px;
+    height: 36px;
+    width: 36px;
+    display: block;
+    margin-bottom: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'museo_slab_700regular';
+    font-size: 18px;
+    line-height: 36px;
+    color: #455560;
+}
+#CampusModals .verde{
+    color: #009104;
+}
+#CampusModals .rojo{
+    color: #e10003;
+}
+#CampusModals .ayudaicon{
+    background-color: transparent;
+    background-image: url("../media/images/icons.png");
+    background-repeat: no-repeat;
+    background-position: -3px -321px;
+    height: 22px;
+    width: 23px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+}
+#CampusModals .altavozicon{
+    background-color: transparent;
+    background-image: url("../media/images/icons.png");
+    background-repeat: no-repeat;
+    background-position: -73px -215px;
+    height: 22px;
+    width: 24px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+}
+#CampusModals .marginLeft6{
+    margin-left: 6px;
+}
+#CampusModals .marginBottom6{
+    margin-bottom: 6px;
+}
+#CampusModals .marginBottom12{
+    margin-bottom: 12px;
+}
+#CampusModals .floatLeft{
+    float: left;
+}
+#CampusModals .seccionIntroduccion{
+    color: #455560;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'MuseoSlab900Regular';
+}
+#CampusModals .ui-dialog-titlebar-close:hover span.cerrartext{
+    color: #0397d6;
+}
+#CampusModals .ui-dialog-titlebar-close:hover span.ui-icon-closethick{
+    background-position: -71px -791px;
+}
+#CampusModals.ui-state-hover, #CampusModals.ui-widget-content .ui-state-hover, #CampusModals.ui-widget-header .ui-state-hover, #CampusModals.ui-state-focus, #CampusModals.ui-widget-content .ui-state-focus, #CampusModals.ui-widget-header .ui-state-focus {
+    background: none !important;
+    border: none !important;
+    color: inherit !important;
+    font-weight: normal !important;
+}
+#CampusModals .ui-state-hover, #CampusModals .ui-widget-content .ui-state-hover, #CampusModals .ui-widget-header .ui-state-hover, #CampusModals .ui-state-focus, #CampusModals .ui-widget-content .ui-state-focus, #CampusModals .ui-widget-header .ui-state-focus {
+    background: none !important;
+    border: none !important;
+    color: inherit !important;
+    font-weight: normal !important;
+}
+#CampusModals .popup_anuncioPremium{
+    width: 604px;
+    height: 68px;
+    border-top-color: #969696;
+    border-top-width: 1px;
+    border-top-style: dashed;
+    border-bottom-color: #969696;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    margin-top: 12px;
+    background-color: transparent;
+}
+#CampusModals .popup_anuncioPremium > a{
+    text-decoration: none;
+}
+#CampusModals .popup_precio{
+    color: #455560;
+    font-size: 18px;
+    font-family: 'MuseoSlab900Regular';
+}
+#CampusModals .popup_almes{
+    color: #455560;
+    font-size: 18px;
+    font-family: 'museo_slab_700regular';
+}
+#CampusModals .popup_contenidosOferta{
+    font-size: 18px;
+    font-family: 'MuseoSlab900Regular';
+    color: #a40038;
+}
+#CampusModals .popup_saberMas{
+    color: #81919e;
+    font-size: 12px;
+    font-family: 'MuseoSans500Regular';
+}
+#CampusModals .popup_haztePremium{
+    background-image: url("../media/images/backgrounds.png");
+    background-repeat: repeat-x;
+    background-position: 0 -366px;
+    height: 42px;
+    width: 284px;
+    margin-left: 15px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 13px;
+}
+#CampusModals .popup_pasateaNoBold{
+    font-size: 20px;
+    color: #fff;
+    font-family: 'museo_slab_700regular';
+    line-height: 42px;
+}
+#CampusModals .popup_pasateaBold{
+    font-size: 20px;
+    color: #fff;
+    font-family: 'MuseoSlab900Regular';
+    line-height: 42px;
+}
+#CampusModals .popup_pasateaNoBold{
+    font-size: 20px;
+    color: #fff;
+    font-family: 'museo_slab_700regular';
+    line-height: 42px;
+}
+#CampusModals .popup_pasateap1{
+    font-size: 16px;
+    color: #455560;
+    font-family: 'MuseoSlab900Regular';
+    line-height: 21px;
+    text-align: center;
+}
+#CampusModals .popup_pasateap2{
+    font-size: 16px;
+    color: #aa003c;
+    font-family: 'MuseoSlab900Regular';
+    line-height: 21px;
+    text-align: center;
+}
+#CampusModals .frasepopup_anuncioPremium{
+    float: left;
+    height: 42px;
+    margin-top: 13px;
+    text-align: center;
+}
+/* Configure your computer, Flash popup*/
+#ABAPlayer3{
+    position:absolute;
+    z-index: 999999;
+}
+/* Styles for the Micro Permission Page */
+#microContent {
+    margin: 35px 0 0 35px;
+    color: #455561;
+    padding-right: 20px;
+    position: relative;
+}
+#microContent h3 {
+    font-family: 'museo_slab_700regular';
+    font-size: 21px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+#microContent h4 {
+    font-family: 'museo_slab_300regular';
+    font-size: 16px;
+    font-weight: normal;
+}
+#microContent #microSteps {
+    font-family: 'proxima_nova_rgregular';
+    font-size: 16px;
+    margin-top: 56px;
+    position: absolute;
+    z-index: 20;
+}
+#microContent #microSteps li {
+    margin-bottom: 20px;
+    float: left;
+    clear: both;
+    background-color: #fff;
+    padding-right: 5px;
+}
+#microContent p {
+    margin-top: 290px;
+    font-family: 'proxima_nova_rgregular';
+    font-size: 14px;
+    line-height: 20px;
+}
+#flash_background {
+    width: 450px;
+    height: 175px;
+    background: url("../media/images/flash_bg_2.png") no-repeat 0 0 transparent;
+    position: absolute;
+    top: 72px;
+    left: 91px;
+    z-index: 10;
+}
+.microPermissionModal a.ui-dialog-titlebar-close {
+    display: none;
+}
+.microPermissionModal #sharerdialog {
+    padding-left: 48px;
+    padding-right: 17px;
+}
+.microPermissionModal .helpContainer {
+    padding:0 0 15px 0;
+    position: relative;
+    width: 630px;
+}
+.microPermissionModal #microContent {
+    margin: 35px 0 115px 15px;
+    padding-right: 0;
+}
+#CampusModals.microPermissionModal .ui-dialog-titlebar.ui-widget-header {
+    /*height: 0 !important;*/
+}
+#overlay {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    background-color: #fff;
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+}
+#loading_ready {
+    background: url("../media/images/spinner.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 64px;
+    margin-top: 120px;
+    margin-left: 325px;
+    width: 64px;
+    text-align: center;
+}
+#microContent .continue {
+    background: url("../media/images/backgrounds.png") repeat-x scroll 0 -67px rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    clear: both;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'MuseoSlab900Regular';
+    font-size: 20px;
+    height: 40px;
+    left: 0;
+    line-height: 40px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 250px;
+    width: 169px;
+}
+#microContent .continue:hover {
+    background-position: 0 -409px;
+}
+
+#mgmPopup h3 {
+    font-size: 22px;
+    color: #44545f;
+    margin-bottom: 10px;
+}
+#mgmPopup p {
+    color: #44545f;
+    padding: 5px 0 15px;
+}
+#mgmPre > button {
+    font-family: 'MuseoSlab900Regular';
+    font-size: 20px;
+    width: 45%;
+}
+#mgmPre > button.registrerSendButton {
+  margin-left: 1%;
+  background-color: #ff7b29 ;
+  background: -webkit-linear-gradient(top, #ff7b29  0, #d06827  100%);
+  background: linear-gradient(to bottom, #ff7b29  0, #d06827  100%);
+}
+#mgmPre > button.registrerSendButton:hover {
+  background-color: #d06827 ;
+  background: -webkit-linear-gradient(top, #d06827  0, #ff7b29  100%);
+  background: linear-gradient(to bottom, #d06827  0, #ff7b29  100%);
+}
+
+#CampusModals {
+    padding: 25px;
+    overflow: hidden;
+    font-family: 'MuseoSans500Regular';
+}
+#CampusModals #popupLoading {
+    position: absolute;
+    z-index: 5000;
+    background: rgba(255,255,255,0.4);
+    top: 0px;
+    left: 0px;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+#CampusModals #popupLoading > .loading {
+    background: url("../media/images/spinner.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+    text-align: center;
+    margin: -32px 0 0 -32px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+#CampusModals .helpContainer {
+    color: #44545f;
+    margin-top: 15px;
+}
+#CampusModals .helpContainer .button {
+    background: transparent url("../media/images/backgrounds.png") repeat-x 0 -67px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'MuseoSlab900Regular' !important;
+    font-size: 20px !important;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    min-width: 200px;
+}
+#CampusModals .helpContainer .button:hover{
+    background-position: 0 -409px;
+}
+
+#CampusModals .titleLevelTest {
+    font-family: 'museo_slab_700regular';
+    color: #44545f;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 10px 30px 10px;
+}
+
+#CampusModals .containerAnalysis {
+    background-color: #EFEFEF;
+    margin: 10px;
+    color: #44545f;
+    padding: 10px;
+    display:flex;
+}
+
+#CampusModals .imgAnalysis {
+    margin: 10px;
+    width: 28px;
+    height: 28px;
+}
+
+#CampusModals .titleAnalysis {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+#CampusModals .descriptionAnalysis {
+    font-size: 14px;
+}
+#CampusModals .textLevelTest {
+    line-height: 25px;
+    text-align: center;
+    margin: 25px;
+    font-size: 16px;
+    color: #44545f;
+}
+
+#CampusModals .text-align-center {
+    text-align: center;
+}
+
+#CampusModals .margin-bottom20 {
+    margin-bottom: 20px;
+}
+#CampusModals .width290 {
+    width: 290px;
+}
+
+#CampusModals ul.welcomeLevelTest > li {
+    background-color: #efefef;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 99.5%;
+    border: 1px #cccccc solid;
+}
+
+
+#CampusModals ul.welcomeLevelTest > li:hover {
+    border: 1px solid #0397D6;
+}
+
+#CampusModals ul.welcomeLevelTest > li > div.inner-content {
+    display: inline-block;
+    padding: 10px 0;
+    line-height: 20px;
+    color: #455560;
+    font-family: 'MuseoSans500Regular';
+    font-size: 16px;
+    width: 100%;
+}
+#CampusModals ul.welcomeLevelTest > li > div.inner-content > span {
+    margin: 0 5px 0 20px;
+}
+#CampusModals ul.welcomeLevelTest > li > div.inner-content > input {
+    margin-right: 20px;
+}
+#CampusModals ul.welcomeLevelTest > li > div.inner-content .levelIcon {
+    float: left;
+    border: 2px solid #455560;
+    border-radius: 20px;
+    padding: 4px;
+    margin: -6px 10px -6px 20px;
+    font-family: 'MuseoSlab500';
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+#CampusModals ul.welcomeLevelTest > li > div.inner-content .levelIcon.doubleLine {
+    line-height: 11px;
+    font-size: 12px;
+}
+#CampusModals ul.welcomeLevelTest > li .helpIconPopup {
+    font-size: 13px;
+}
+#CampusModals ul.welcomeLevelTest > li input:checked + .levelLabel > .levelIcon {
+    color: #0397D6;
+    border-color: #0397D6;
+}
+#CampusModals ul.welcomeLevelTest > li input:checked + .levelLabel > span {
+    color: #0397D6;
+}
+#CampusModals .levelTestSeparator {
+    font-family: 'MuseoSans500Regular';
+    font-size: 15px;
+    color: #455560;
+    text-align: center;
+    position: relative;
+}
+#CampusModals .levelTestSeparator span {
+    position: relative;
+}
+#CampusModals .levelTestSeparator span:before, #CampusModals .levelTestSeparator span:after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    border-bottom: 1px solid #455560;
+    top: 0;
+    width: 300px;
+}
+#CampusModals .levelTestSeparator span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+#CampusModals .levelTestSeparator span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+#CampusModals .questionLevelTest {
+    margin: 25px 0px;
+    color: #455560;
+    font-size: 18px;
+}
+#CampusModals .answerLevelTest {
+    margin-left: 20px;
+}
+#CampusModals .ko {
+    background: url("../media/images/icons-v-x.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    background-position: 0px -40px;
+    height: 17px;
+    width: 21px;
+}
+
+#CampusModals .ui-progressbar-test{
+    box-shadow:0 1px 2px #CCC;
+    height:24px;
+    margin-bottom:10px;
+    overflow:hidden;
+    text-align:left;
+    width:204px
+}
+
+#CampusModals .ui-progressbar-test .ui-progressbar-value-test{
+    border-radius:4px;
+    height:100%;
+    margin:0
+}
+
+#CampusModals .ui-widget-header-test{
+    background:transparent url("../media/images/bg-progressbar.gif") repeat-x 50% 50%
+}
+
+#CampusModals .ui-widget-content-test {
+    background: url('../media/images/ui-bg_flat_75_ffffff_40x100.png') repeat-x scroll 50% 50% #FFF;
+    border: 1px solid #D2D2D2;
+    border-radius: 4px;
+}
+
+#CampusModals .ui-corner-all-test,.ui-corner-top-test,.ui-corner-left-test,.ui-corner-tl-test{
+    border-top-left-radius:4px
+}

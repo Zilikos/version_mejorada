@@ -1,0 +1,302 @@
+.ab-banner,
+.bn-pasate,
+.bn-premium,
+.bn-generico,
+.bn-exalumno {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+    width: 698px;
+    margin-top: 5px;
+}
+
+.ab-banner {
+    font-family:"museo_slab_700regular", Arial, sans-serif;
+}
+
+.banner-with-img {
+    height: 66px;
+    line-height: 66px;
+    text-align: center;
+    padding: 0;
+    vertical-align: middle;
+    color: #46555F;
+    font-size: 18px;
+}
+
+.banner-with-img p {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.banner-with-img p img {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+
+.bn-pasate {
+    background-image: url(//abaenglish.emsecure.net/images/web/img/bn-free.png);
+}
+.bn-premium {
+    /*background-image: url(//abaenglish.emsecure.net/images/web/img/bn-premium.png);*/
+}
+.bn-generico,
+.bn-exalumno {
+    /*background-image: url(//abaenglish.emsecure.net/images/web/img/bn-generico.png);*/
+}
+.dto {
+    text-shadow: 1px 1px 1px #09587D;
+    color: #FFF;
+    font-family:"MuseoSlab500", Arial, sans-serif;
+    font-size: 19px;
+    position: absolute;
+    top: 16px;
+    -moz-transform: rotate(-30deg);
+    -webkit-transform:rotate(-30deg);
+    -ms-transform:rotate(-30deg);
+    -o-transform:rotate(-30deg);
+}
+.text-pasate {
+    float: left;
+    margin: 12px 0 0 48px;
+    width: 350px;
+}
+.text-pasate.no-dto {
+    margin: 12px 0 0 10px;
+}
+.text-premium {
+    margin: 20px 0 0 50px;
+    width: 600px;
+}
+.text-generico {
+    margin-top: 12px;
+}
+.text-exalumno {
+    float: left;
+    margin: 12px 0 0 0;
+    width: 306px;
+}
+.text-exalumno.generico {
+    margin: 12px 0 0 25px;
+}
+.text-pasate p,
+.btn-pasate span,
+.text-premium p,
+.text-generico p,
+.text-exalumno p {
+    font-family:"museo_slab_700regular", Arial, sans-serif;
+}
+.text-pasate p,
+.text-premium p,
+.text-generico p,
+.text-exalumno p {
+    color: #46555F;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+}
+.text-pasate p span,
+.text-premium p span,
+.text-generico p span,
+.text-exalumno p span {
+    color: #A8083E;
+}
+.btn-pasate,
+.btn-exalumno,
+.btn-premium-mgm {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-family:"museo_slab_700regular", Arial, sans-serif;
+    font-size: 19px;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    right: 12px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #950637;
+    top: 8px;
+}
+
+.btn-pasate {
+    background-image: url(//abaenglish.emsecure.net/images/web/img/bn_p1.png);
+    padding: 14px 0 0 47px;
+    width: 248px;
+}
+.btn-pasate.generico {
+    padding: 14px 0 0 47px;
+    right: 46px;
+    width: 248px;
+}
+.btn-pasate.short {
+    background-image: url(//abaenglish.emsecure.net/images/web/img/btn-pasate-test.png);
+    padding: 8px 0 0 82px;
+    right: 46px;
+    width: 250px;
+}
+.btn-pasate.no-dto {
+    right: 45px;
+}
+btn-pasateen.no-dto {
+    right: 45px;
+}
+btn-pasatept.no-dto {
+    right: 45px;
+}
+btn-pasatees.no-dto {
+    right: 45px;
+}
+
+btn-pasatefr.no-dto {
+    right: 45px;
+}
+
+
+btn-pasateit.no-dto {
+    right: 45px;
+}
+.btn-pasate.aprovechalo {
+    padding: 8px 0 0 102px;
+    right: 46px;
+    width: 103px;
+}
+.btn-exalumno {
+    background-image: url(//abaenglish.emsecure.net/images/web/img/btn-exalumno.png);
+    padding: 8px 0 0 73px;
+    width: 375px;
+}
+.btn-premium-mgm {
+    background-image: url(//abaenglish.emsecure.net/images/web/img/btn-premium-mgm.png);
+    padding: 8px 0 0 66px;
+    right: 42px;
+    width: 309px;
+}
+
+.btn-pasateen {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-family:"MuseoSlab900Regular", Arial, sans-serif;
+    font-size: 16px;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    right: 12px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #950637;
+    top: 8px;
+    background-image: url(//abaenglish.emsecure.net/images/web/img/bn_p1.png);
+    padding: 17px 0 0 38px;
+    width: 260px;
+}
+
+.btn-pasatept {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-family:"MuseoSlab900Regular", Arial, sans-serif;
+    font-size: 19px;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    right: 12px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #950637;
+    top: 8px;
+    background-image: url(//abaenglish.emsecure.net/images/web/img/bn_p1.png);
+    padding: 14px 0 0 35px;
+    width: 260px;
+}
+
+.btn-pasatees {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-family:"MuseoSlab900Regular", Arial, sans-serif;
+    font-size: 19px;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    right: 12px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #950637;
+    top: 8px;
+    background-image: url(//abaenglish.emsecure.net/images/web/img/bn_p1.png);
+    padding: 14px 0 0 31px;
+    width: 265px;
+}
+
+.btn-pasateit {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-family:"MuseoSlab900Regular", Arial, sans-serif;
+    font-size: 19px;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    right: 12px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #950637;
+    top: 8px;
+    background-image: url(//abaenglish.emsecure.net/images/web/img/bn_p1.png);
+    padding: 14px 0 0 26px;
+    width: 270px;
+}
+
+.btn-pasatefr {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-family:"MuseoSlab900Regular", Arial, sans-serif;
+    font-size: 18px;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    right: 12px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #950637;
+    top: 8px;
+    background-image: url(//abaenglish.emsecure.net/images/web/img/bn_p1.png);
+    padding: 14px 0 0 35px;
+    width: 260px;
+}
+/* New code for the redesign of the buttons */
+#divBtnGoPremium {
+    background: transparent url("//abaenglish.emsecure.net/images/web/img/backgrounds.png") repeat-x 0 -366px;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    font-family: 'museo_slab_700regular';
+    font-size: 20px;
+    color: #fff;
+    width: 248px;
+    text-align: center;
+    -moz-border-radius: 3px !important; /* FF1+ */
+    -webkit-border-radius: 3px !important; /* Saf3-4 */
+    border-radius: 3px !important; /* Opera 10.5, IE9, Saf5, Chrome */
+    cursor: pointer;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    margin-top: 6px;
+}
+#divBtnGoPremium:hover {
+    background-position: 0 -716px;
+}
+#divBtnGoPremium div {
+    text-align: center;
+}
+.bn-pasate {
+    background: transparent url("//abaenglish.emsecure.net/images/web/img/bn_free_background.png") no-repeat 0 0;
+}

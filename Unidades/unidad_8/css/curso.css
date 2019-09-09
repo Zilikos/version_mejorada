@@ -1,0 +1,658 @@
+@CHARSET "ISO-8859-1";
+
+/*********************************************************/
+/****************Eric Meyers Reset************************/
+/*********************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+/*********************************************************/
+/**********************Master CSS************************/
+/*********************************************************/
+/* touched */
+.course_header{
+    width: 695px;
+    padding-left: 6px;
+}
+.breadCrumbTextSelected{
+    color: #2e61b0 !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+.maxHeight{
+    height: 15px !important;
+}
+/*********************************************************/
+/**********************ABA Player************************/
+/*********************************************************/
+#activex{
+    display:block;
+    position:relative;
+    height:546px;
+    width:701px;
+    background-color: transparent;
+}
+#videoHolder{
+    display: block;
+    /* to fix zoom issue #3673 */
+    top: -1000px;
+    left: -1000px;
+}
+.microPermission{
+    height: 138px;
+    width: 215px;
+    background-color: transparent;
+    z-index: 99999;
+}
+.ui-dialog.microPermissionModal {
+    z-index: 99990 !important;
+}
+.microPermissionHolder{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 899999;
+    /*  background: transparent url("../images/fondoModal.png") repeat 0 0;*/
+}
+#loadingWrapper{
+    background-color: #fff;
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    margin: 0 auto;
+    position: absolute;
+    /*left: 40%;
+    top: 42%;
+    width: 140px;
+     height: 71px; */
+    left:7px;
+    top:74px;
+    width: 695px;
+    height: 437px;
+    text-align: center;
+    z-index: 99999;
+}
+#loadingWrapper.dictionaryWrapper{
+    top: 0;
+    left: 0;
+    height: 500px;
+}
+#loadingWrapper.dictionaryWrapper #loading{
+    position: absolute;
+    left: 39%;
+}
+.loadingImgContainer{
+    background: transparent url("../../images/loadingBkg.gif") no-repeat 0 0;
+    margin: 0 auto;
+    position: absolute;
+    left: 40%;
+    top: 42%;
+    width: 140px;
+    height: 71px;
+    text-align: center;
+    z-index: 99999;
+}
+#loading{
+    background: transparent url("../../images/spinner.gif") no-repeat 0 0;
+    /* margin-top: 18px; */
+    margin-top: 165px;
+    display: block;
+    /*height: 32px;
+    width: 32px;*/
+    height: 64px;
+    width: 64px;
+    display: inline-block;
+    #display: inline;
+    _display: inline;
+    zoom: 1;
+}
+/*********************************************************/
+/**********************canvis cflo************************/
+/*********************************************************/
+div.breadcrumbItem span.menuleft{
+    background: transparent url("../../images/icons.png") no-repeat -68px 0;
+    height: 9px;
+    width: 4px;
+    padding: 19px 0 9px;
+    float: left;
+}
+div.breadcrumbItem span.menucenter{
+    background: transparent url("../../images/backgrounds.png") repeat-x 0 -142px;
+    height: 15px;
+    width: 78px;
+    min-width: 70px;
+    padding: 13px 0 9px;
+    float: left;
+    text-align: center;
+    color: #92908b;
+    font-size: 12px;
+    font-family: 'proxima_nova_thextrabold';
+    z-index: 1;
+}
+div.breadcrumbItem span.menuright{
+    background: transparent url("../../images/icons.png") no-repeat -75px 0;
+    height: 9px;
+    width: 4px;
+    padding: 19px 0 9px;
+    float: left;
+}
+div.breadcrumbItem span.numeroMenu{
+    background: transparent url("../../images/icons.png") no-repeat -35px -4px;
+    height: 21px;
+    width: 21px;
+    float: left;
+    position: absolute;
+    left: 33px;
+    top: -9px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'proxima_nova_thextrabold';
+    color: #92908b;
+    line-height: 21px;
+}
+div.breadcrumbItem:hover > span.menuleft{
+    background: transparent url("../../images/icons.png") no-repeat -85px -113px;
+    height: 9px;
+    width: 4px;
+    padding: 19px 0 9px;
+    float: left;
+}
+div.breadcrumbItem:hover > span.menucenter{
+    background: transparent url("../../images/backgrounds.png") repeat-x 0 -263px;
+    height: 15px;
+    width: 78px;
+    min-width: 70px;
+    padding: 13px 0 9px;
+    float: left;
+    text-align: center;
+    color: #92908b;
+    font-size: 12px;
+    font-family: 'proxima_nova_thextrabold';
+    z-index: 1;
+}
+div.breadcrumbItem:hover > span.menuright{
+    background: transparent url("../../images/icons.png") no-repeat -92px -113px;
+    height: 9px;
+    width: 4px;
+    padding: 19px 0 9px;
+    float: left;
+}
+div.breadcrumbItem.breadcrum_selected:hover > span.menuleft{
+    background: transparent url("../../images/icons.png") no-repeat -82px 0;
+    height: 9px;
+    width: 4px;
+    padding: 19px 0 9px;
+    float: left;
+}
+div.breadcrumbItem.breadcrum_selected:hover > span.menucenter{
+    background: transparent url("../../images/backgrounds.png") repeat-x 0 -179px;
+    height: 15px;
+    width: 78px;
+    min-width: 70px;
+    padding: 13px 0 9px;
+    float: left;
+    text-align: center;
+    color: #455560;
+    font-size: 12px;
+    font-family: 'proxima_nova_thextrabold';
+    z-index: 1;
+}
+div.breadcrumbItem.breadcrum_selected:hover > span.menuright{
+    background: transparent url("../../images/icons.png") no-repeat -90px 0;
+    height: 9px;
+    width: 4px;
+    padding: 19px 0 9px;
+    float: left;
+}
+/****hover****/
+div.breadcrum_selected span.menuleft{
+    background: transparent url("../../images/icons.png") no-repeat -82px 0;
+    height: 9px;
+    width: 4px;
+    padding: 19px 0 9px;
+    float: left;
+}
+div.breadcrum_selected span.menucenter{
+    background: transparent url("../../images/backgrounds.png") repeat-x 0 -179px;
+    height: 15px;
+    width: 78px;
+    min-width: 70px;
+    padding: 13px 0 9px;
+    float: left;
+    text-align: center;
+    color: #92908b;
+    font-size: 12px;
+    font-family: 'proxima_nova_thextrabold';
+    z-index: 1;
+}
+div.breadcrum_selected span.menuright{
+    background: transparent url("../../images/icons.png") no-repeat -90px 0;
+    height: 9px;
+    width: 4px;
+    padding: 19px 0 9px;
+    float: left;
+}
+div.breadcrum_selected span.numeroMenu{
+    background: transparent url("../../images/icons.png") no-repeat -6px -3px;
+    height: 21px;
+    width: 20px;
+    float: left;
+    position: absolute;
+    left: 33px;
+    top: -9px;
+    font-size: 12px;
+    font-family: 'proxima_nova_thextrabold';
+    color: #fff;
+    line-height: 21px;
+}
+div.specialBreadItem.breadcrum_selected span.menuleft{
+    background: transparent url("../../images/icons.png") no-repeat -82px 0;
+    height: 9px;
+    width: 4px;
+    padding: 19px 0 9px;
+    float: left;
+}
+div.specialBreadItem.breadcrum_selected span.menucenter{
+    background: transparent url("../../images/backgrounds.png") repeat-x 0 -179px;
+    height: 15px;
+    width: 78px;
+    min-width: 70px;
+    padding: 13px 0 9px;
+    float: left;
+    text-align: center;
+    color: #455560;
+    font-size: 12px;
+    font-family: 'proxima_nova_thextrabold';
+    text-decoration: none;
+    z-index: 1;
+}
+div.specialBreadItem.breadcrum_selected span.menuright{
+    background: transparent url("../../images/icons.png") no-repeat -90px 0;
+    height: 9px;
+    width: 4px;
+    padding: 19px 0 9px;
+    float: left;
+}
+div.specialBreadItem.breadcrum_selected span.numeroMenu{
+    background: transparent url("../../images/icons.png") no-repeat -6px -3px;
+    height: 21px;
+    width: 20px;
+    float: left;
+    position: absolute;
+    left: 33px;
+    top: -9px;
+    font-size: 12px;
+    font-family: 'proxima_nova_thextrabold';
+    color: #fff;
+    line-height: 21px;
+}
+#breadcrumb{
+    background: transparent url("../../images/backgrounds.png") repeat-x 0 -217px;
+    width: 100%;
+    height: 37px;
+    overflow: hidden;
+    cursor: pointer;
+    padding-top: 9px;
+    z-index: 0;
+}
+#breadcrumb div{
+    background-color: transparent;
+    height: 37px;
+    float: left;
+    position: relative;
+}
+.marginRight1{
+    margin-right: 1px;
+}
+.menuCurso{
+    width: 695px;
+    height: 30px;
+    background-color: #afada9;
+    margin: 0 0 3px 6px;
+    position: relative;
+}
+.course_lesson{
+    background-color: #455660;
+    height: 30px;
+    padding: 9px 10px 0 30px;
+}
+#course_content .f21{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'MuseoSlab900Regular';
+}
+.f23{
+    font-size: 14px;
+    color: #455560;
+    font-family: 'MuseoSlab900Regular';
+}
+.f22{
+    font-size: 14px;
+    color: #455560;
+    font-family: 'museo_slab_700regular';
+}
+.f33{
+    font-family: 'proxima_nova_thextrabold';
+    font-size: 14px;
+    color: #fff;
+}
+#course_content .f18{
+    font-size: 16px;
+    color: #fff;
+    font-family: 'MuseoSlab900Regular';
+}
+#course_complete{
+    font-size: 16px;
+    color: #fff;
+    margin: 5px 19px 0 0;
+    float: right;
+}
+.courseHeadText{
+    margin: 8px 0 0 10px;
+}
+.flechaUnidad{
+    border-color: transparent transparent transparent #455560;
+    border-style: solid;
+    border-width: 20px 20px 20px 20px;
+    height: 0;
+    width: 0;
+}
+#course_content .f19{
+    color: #fff;
+    font-family: 'MuseoSlab500';
+    font-size: 16px;
+}
+#course_content .f15{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'MuseoSlab500';
+}
+#course_content{
+    position: relative;
+    background: transparent url("../../images/fondocampus.png") repeat 0 0;
+    height: 627px;
+    width: 701px;
+}
+.playicon{
+    background: transparent url("../../images/icons.png") no-repeat -83px -358px;
+    float: left;
+    height: 16px;
+    margin-right: 8px;
+    width: 14px;
+}
+.pararicon{
+    background: transparent url("../../images/icons.png") no-repeat -80px -516px;
+    float: left;
+    height: 16px;
+    margin-right: 8px;
+    width: 14px;
+}
+.escucharicon{
+    background: transparent url("../../images/icons.png") no-repeat -71px -165px;
+    float: left;
+    height: 21px;
+    margin-right: 8px;
+    width: 24px;
+}
+.pararescuchaicon{
+    background: transparent url("../../images/icons.png") no-repeat -56px -516px;
+    float: left;
+    height: 16px;
+    margin-right: 8px;
+    width: 14px;
+}
+.EscuchaIconHeader{
+    background: transparent url("../../images/icons.png") no-repeat -1px -57px;
+    height: 47px;
+    width: 39px;
+}
+.HablaIconHeader{
+    background: transparent url("../../images/icons.png") no-repeat -41px -57px;
+    height: 47px;
+    width: 39px;
+}
+.HablaIconHeader-popover{
+    background: transparent url("../../images/icons.png") no-repeat -51px -63px;
+    height: 25px;
+    width: 17px;
+    margin: -3px 2px;
+    display: inline-block;
+}
+.ComparaIconHeader{
+    background: transparent url("../../images/icons.png") no-repeat -1px -105px;
+    height: 47px;
+    width: 39px;
+}
+.ComparaIconHeader-popover{
+    background: transparent url("../../images/icons.png") no-repeat -11px -108px;
+    height: 30px;
+    width: 17px;
+    margin: -6px 2px;
+    display: inline-block;
+}
+.CheckIconHeader{
+    background: transparent url("../../images/icons.png") no-repeat -161px -591px;
+    height: 47px;
+    width: 39px;
+}
+.CheckIconHeader-popover{
+    background: transparent url("../../images/icons.png") no-repeat -164px -593px;
+    height: 29px;
+    width: 33px;
+    margin: -5px -3px;
+    display: inline-block;
+}
+.PlayIconHeader{
+    background: transparent url("../../images/icons.png") no-repeat -1px -474px;
+    height: 47px;
+    width: 39px;
+}
+.FinalizarIconHeader{
+    background: transparent url("../../images/icons.png") no-repeat -40px -661px;
+    height: 46px;
+    width: 37px;
+}
+.MarcarIconHeader{
+    background: transparent url("../../images/icons.png") no-repeat -1px -661px;
+    height: 46px;
+    width: 38px;
+}
+#answer{
+    background: transparent url("../../images/icons.png") no-repeat -3px -321px;
+    height: 22px;
+    width: 23px;
+    cursor: pointer;
+    float: left;
+}
+.stateBar{
+    background-color: #f5d4d8;
+    top: 29px;
+    float: left;
+    height: 3px;
+    left: 8px;
+    max-width: 70px;
+    min-width: 70px;
+    position: absolute;
+    width: 70px;
+    z-index: 20;
+}
+div.breadcrumbItem span.stateBar {
+    display: none;
+}
+.progressBar{
+    background-color: #75e88b;
+    position: absolute;
+    z-index: 30;
+    float: left;
+    height: 3px;
+    top: 29px;
+    left: 8px;
+    max-width: 70px !important;
+    width: 0px;
+}
+.stateBarTotal{
+    background-color: #e7d1d1;
+    top: 24px;
+    float: left;
+    height: 3px;
+    left: 563px;
+    max-width: 113px;
+    min-width: 113px;
+    position: absolute;
+    width: 113px;
+    z-index: 20;
+}
+.progressBarTotal{
+    background-color: #75e88b;
+    position: absolute;
+    z-index: 30;
+    float: left;
+    height: 3px;
+    top: 24px;
+    left: 563px;
+    max-width: 113px !important;
+    width: 0px;
+}
+.museoSans500Azul12{
+    color: #0397d6;
+    cursor: pointer;
+    display: inline-block;
+    #display: inline;
+    _display: inline;
+    zoom: 1;
+    font-family: 'MuseoSans500Regular';
+    font-size: 13px;
+}
+.museoSans500Azul12:hover{
+    text-decoration: underline;
+}
+.marginRight59{
+    margin-right: 59px;
+}
+.marginRight13{
+    margin-right: 13px;
+}
+.marginRight44{
+    margin-right: 44px;
+}
+.marginLeft11{
+    margin-left: 11px;
+}
+.textotituloComprende{
+    width: 438px;
+    color: #455560;
+    font-family: 'MuseoSlab500';
+    font-size: 12px;
+    margin: 8px 19px 0 0;
+    line-height: 16px;
+    text-align: right;
+}
+.contenido{
+    position: relative !important;
+}
+#thisUnit{
+    position: relative;
+}
+.textoText11{
+    color: #000000;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 19px;
+}
+#glosary{
+    margin-right: 25px;
+}
+/*VASAVA ADDED*/
+.ABAPlayer{
+    position:absolute;
+    z-index: 999999;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 500;
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    margin-left: 5px;
+    background-color: lightgrey;
+}
+.jwcontrolbar.jwplayer_videoFullScreen {
+    max-width: 100% !important;
+    margin-bottom: 0px !important;
+}
+.jwcaptions.jwplayer_videoFullScreen {
+    margin-top: -30px !important;
+}
+.goAway {
+    -ms-transform: translateX(-10000px);
+    -webkit-transform: translateX(-10000px);
+    -moz-transform: translateX(-10000px);
+    transform: translateX(-10000px);
+}

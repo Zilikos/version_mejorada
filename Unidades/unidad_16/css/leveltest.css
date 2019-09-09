@@ -1,0 +1,193 @@
+/* popup */
+
+#divInnerFullCover {
+    min-height: 25em;
+}
+
+#btnCloseLevelTest {
+    margin-left: 20px;
+    float: left;
+}
+#btnNextLevelTest {
+    margin-right: 20px;
+    float: right;
+}
+.ico-successTestLevel.okTestLevel {
+
+    height: 17px;
+    width: 21px;
+    background: url('./images/icons-v-x.png') no-repeat scroll 0px 0px transparent;
+    display: inline-block;
+
+}
+
+.ico-koTestLevel.koTestLevel {
+
+    height: 17px;
+    width: 21px;
+    background: url('./images/icons-v-x.png') no-repeat scroll 0px -40px transparent;
+    display: inline-block;
+
+}
+
+.modal-test {
+    font-family: "MuseoSans500", 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+.modal-test .divTestOptions {
+    font-family: "MuseoSans500Regular";
+    margin:auto;
+    width: 80%;
+    height: 80%;
+    text-align: left;
+}
+
+
+.modal-test {
+    position:relative;
+    width: 100%;
+    /*    height: 100%; */
+    min-width: 50%;
+    font-family: "MuseoSans500Regular",Arial,sans-serif;
+    background-color: #FFFFFF;
+    color: #455560;
+}
+
+.modal-test h4 {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.modal-test li {
+    line-height: 1.416666667em;
+}
+
+.modal-test label2 {
+    font-size: 1.166666667em;
+    font-weight: normal;
+}
+
+.fancybox-skin {
+    background-color: #ffffff !important;
+}
+
+
+.titleLevelTest {
+    font-family: 'museo_slab_700regular','Helvetica Neue', 'Arial', sans-serif;
+    color: #44545f;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 10px 30px 10px;
+}
+
+.questionLevelTest {
+    margin: 25px 0px;
+    color: #455560;
+    font-size: 18px;
+}
+ul.welcomeLevelTest > li {
+    background-color: #efefef;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 99.5%;
+    border: 1px #cccccc solid;
+}
+
+ul.welcomeLevelTest > li:hover {
+    border: 1px solid #0397D6;
+}
+
+ul.welcomeLevelTest > li > div.inner-content {
+    display: inline-block;
+    padding: 10px 0;
+    line-height: 20px;
+    color: #455560;
+    font-family: 'MuseoSans500Regular';
+    font-size: 16px;
+    width: 100%;
+}
+ul.welcomeLevelTest > li > div.inner-content > label2 > span {
+    font-size: 16px;
+    cursor: default;
+}
+ul.welcomeLevelTest > li > div.inner-content > input {
+    margin-right: 20px;
+    float: right !important;
+}
+ul.welcomeLevelTest > li > div.inner-content .levelIcon {
+    float: left;
+    border: 2px solid #455560;
+    border-radius: 20px;
+    padding: 4px;
+    margin: -6px 10px -6px 20px;
+    font-family: 'MuseoSlab500';
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+ul.welcomeLevelTest > li > div.inner-content .levelIcon.doubleLine {
+    line-height: 11px;
+    font-size: 12px;
+}
+ul.welcomeLevelTest > li .helpIconPopup {
+    font-size: 13px;
+}
+ul.welcomeLevelTest > li input:checked + .levelLabel > .levelIcon {
+    color: #0397D6;
+    border-color: #0397D6;
+}
+ul.welcomeLevelTest > li input:checked + .levelLabel > span {
+    color: #0397D6;
+}
+.answerLevelTest {
+    margin-left: 20px;
+}
+.centerLevelTest  {
+    text-align: center;
+}
+.abaButtonLevelTest {
+    border-radius: 4px;
+    line-height: 22px;
+    margin: 10px 0 15px 0;
+    position: relative;
+    width: 65%;
+    text-align: center;
+    /*border: 0 none;*/
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: inset 0px 1px 0px 0px #43D1EC, 0 1px 2px #999;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #04BFE6), color-stop(1, #038DD2) );
+    background: -moz-linear-gradient( center top, #04BFE6 5%, #038DD2 100% );
+    background-color: #04BFE6;
+    border: 1px solid #007FC2;
+    display: inline-block;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px #0281BA;
+}
+.abaButtonLevelTest:hover, .abaButtonLevelTest:focus, .abaButtonLevelTest:active {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.abaButtonLevelTest span {
+    border-bottom: 5px solid #FFF;
+    border-right: 5px solid #FFF;
+    content: "";
+    height: 7px;
+    position: absolute;
+    right: 19px;
+    top: 11px;
+    width: 7px;
+    transform: rotate(315deg);
+    -ms-transform: rotate(315deg); /* IE 9 */
+    -webkit-transform: rotate(315deg); /* Safari */
+    box-sizing: unset;
+}
+
+.modal-test .ui-widget-content { background:#FFF url("./images/ui-bg_flat_75_ffffff_40x100.png") repeat-x 50% 50%; border:1px solid #D2D2D2; border-radius:4px; }
+.modal-test .ui-progressbar { box-shadow:0 1px 2px #CCC; height:24px; margin-bottom:10px; overflow:hidden; text-align:left; width:215px; }
+.modal-test .ui-progressbar .ui-progressbar-value { border-radius:4px; height:100%; margin:0; }
+.modal-test .ui-corner-all,.modal-test .ui-corner-top,.modal-test .ui-corner-left,.modal-test .ui-corner-tl { border-top-left-radius:4px; }
+.modal-test .ui-widget-header2 { background: transparent url("./images/bg-progressbar.gif") repeat-x 50% 50%; }

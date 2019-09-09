@@ -1,0 +1,708 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/********** FONTS ************/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600');
+
+/********** ESTILOS PULSE ANIMATION ************/
+
+@-webkit-keyframes pulse {
+ from {
+ -webkit-transform: scale3d(1, 1, 1);
+ transform: scale3d(1, 1, 1);
+}
+ 50% {
+ -webkit-transform: scale3d(1.05, 1.05, 1.05);
+ transform: scale3d(1.05, 1.05, 1.05);
+}
+ to {
+ -webkit-transform: scale3d(1, 1, 1);
+ transform: scale3d(1, 1, 1);
+}
+}
+ @keyframes pulse {
+ from {
+ -webkit-transform: scale3d(1, 1, 1);
+ transform: scale3d(1, 1, 1);
+}
+ 50% {
+ -webkit-transform: scale3d(1.05, 1.05, 1.05);
+ transform: scale3d(1.05, 1.05, 1.05);
+}
+ to {
+ -webkit-transform: scale3d(1, 1, 1);
+ transform: scale3d(1, 1, 1);
+}
+}
+.pulse {
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+}
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+/********** ESTILOS PULSE ANIMATION ABA MOMENTS ************/
+
+#crossfade > img {
+	position: absolute;
+	top: 10px;
+	left: 320px;
+	color: transparent;
+	opacity: 0;
+	z-index: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-animation: imageAnimation 30s linear infinite 0s;
+	-moz-animation: imageAnimation 30s linear infinite 0s;
+	-o-animation: imageAnimation 30s linear infinite 0s;
+	-ms-animation: imageAnimation 30s linear infinite 0s;
+	animation: imageAnimation 30s linear infinite 0s;
+}
+#crossfade > img:nth-child(2) {
+	-webkit-animation-delay: 6s;
+	-moz-animation-delay: 6s;
+	-o-animation-delay: 6s;
+	-ms-animation-delay: 6s;
+	animation-delay: 6s;
+}
+#crossfade > img:nth-child(3) {
+	-webkit-animation-delay: 12s;
+	-moz-animation-delay: 12s;
+	-o-animation-delay: 12s;
+	-ms-animation-delay: 12s;
+	animation-delay: 12s;
+}
+#crossfade > img:nth-child(4) {
+	-webkit-animation-delay: 18s;
+	-moz-animation-delay: 18s;
+	-o-animation-delay: 18s;
+	-ms-animation-delay: 18s;
+	animation-delay: 18s;
+}
+#crossfade > img:nth-child(5) {
+	-webkit-animation-delay: 24s;
+	-moz-animation-delay: 24s;
+	-o-animation-delay: 24s;
+	-ms-animation-delay: 24s;
+	animation-delay: 24s;
+}
+#crossfade1 > img {
+	position: absolute;
+	top: 10px;
+	left: 380px;
+	color: transparent;
+	opacity: 0;
+	z-index: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-animation: imageAnimation 30s linear infinite 0s;
+	-moz-animation: imageAnimation 30s linear infinite 0s;
+	-o-animation: imageAnimation 30s linear infinite 0s;
+	-ms-animation: imageAnimation 30s linear infinite 0s;
+	animation: imageAnimation 30s linear infinite 0s;
+}
+#crossfade1 > img:nth-child(2) {
+	-webkit-animation-delay: 6s;
+	-moz-animation-delay: 6s;
+	-o-animation-delay: 6s;
+	-ms-animation-delay: 6s;
+	animation-delay: 6s;
+}
+#crossfade1 > img:nth-child(3) {
+	-webkit-animation-delay: 12s;
+	-moz-animation-delay: 12s;
+	-o-animation-delay: 12s;
+	-ms-animation-delay: 12s;
+	animation-delay: 12s;
+}
+#crossfade1 > img:nth-child(4) {
+	-webkit-animation-delay: 18s;
+	-moz-animation-delay: 18s;
+	-o-animation-delay: 18s;
+	-ms-animation-delay: 18s;
+	animation-delay: 18s;
+}
+#crossfade1 > img:nth-child(5) {
+	-webkit-animation-delay: 24s;
+	-moz-animation-delay: 24s;
+	-o-animation-delay: 24s;
+	-ms-animation-delay: 24s;
+	animation-delay: 24s;
+}
+#crossfade2 > img {
+	position: absolute;
+	top: 10px;
+	left: 440px;
+	color: transparent;
+	opacity: 0;
+	z-index: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-animation: imageAnimation 30s linear infinite 0s;
+	-moz-animation: imageAnimation 30s linear infinite 0s;
+	-o-animation: imageAnimation 30s linear infinite 0s;
+	-ms-animation: imageAnimation 30s linear infinite 0s;
+	animation: imageAnimation 30s linear infinite 0s;
+}
+#crossfade2 > img:nth-child(2) {
+	-webkit-animation-delay: 6s;
+	-moz-animation-delay: 6s;
+	-o-animation-delay: 6s;
+	-ms-animation-delay: 6s;
+	animation-delay: 6s;
+}
+#crossfade2 > img:nth-child(3) {
+	-webkit-animation-delay: 12s;
+	-moz-animation-delay: 12s;
+	-o-animation-delay: 12s;
+	-ms-animation-delay: 12s;
+	animation-delay: 12s;
+}
+#crossfade2> img:nth-child(4) {
+	-webkit-animation-delay: 18s;
+	-moz-animation-delay: 18s;
+	-o-animation-delay: 18s;
+	-ms-animation-delay: 18s;
+	animation-delay: 18s;
+}
+#crossfade2 > img:nth-child(5) {
+	-webkit-animation-delay: 24s;
+	-moz-animation-delay: 24s;
+	-o-animation-delay: 24s;
+	-ms-animation-delay: 24s;
+	animation-delay: 24s;
+}
+ @-webkit-keyframes imageAnimation {
+ 0% {
+opacity: 0;
+ -webkit-animation-timing-function: ease-in;
+}
+ 8% {
+opacity: 1;
+ -webkit-animation-timing-function: ease-out;
+}
+ 17% {
+opacity: 1
+}
+ 25% {
+opacity: 0
+}
+ 100% {
+opacity: 0
+}
+}
+ @-moz-keyframes imageAnimation {
+ 0% {
+opacity: 0;
+ -moz-animation-timing-function: ease-in;
+}
+ 8% {
+opacity: 1;
+ -moz-animation-timing-function: ease-out;
+}
+ 17% {
+opacity: 1
+}
+ 25% {
+opacity: 0
+}
+ 100% {
+opacity: 0
+}
+}
+ @-o-keyframes imageAnimation {
+ 0% {
+opacity: 0;
+ -o-animation-timing-function: ease-in;
+}
+ 8% {
+opacity: 1;
+ -o-animation-timing-function: ease-out;
+}
+ 17% {
+opacity: 1
+}
+ 25% {
+opacity: 0
+}
+ 100% {
+opacity: 0
+}
+}
+ @-ms-keyframes imageAnimation {
+ 0% {
+opacity: 0;
+ -ms-animation-timing-function: ease-in;
+}
+ 8% {
+opacity: 1;
+ -ms-animation-timing-function: ease-out;
+}
+ 17% {
+opacity: 1
+}
+ 25% {
+opacity: 0
+}
+ 100% {
+opacity: 0
+}
+}
+ @keyframes imageAnimation {
+ 0% {
+opacity: 0;
+ animation-timing-function: ease-in;
+}
+ 8% {
+opacity: 1;
+ animation-timing-function: ease-out;
+}
+ 17% {
+opacity: 1
+}
+ 25% {
+opacity: 0
+}
+ 100% {
+opacity: 0
+}
+}
+/************************************ BANNER OFERTA CAMPUS ************************************************/
+
+.bn-generico_new_banner {
+	overflow: hidden;
+	position: relative;
+	width: 698px;
+	height: 70px;
+	background-image: url(https://abaenglish.emsecure.net/images/banners/etiquetabckg.png);
+	background-repeat: no-repeat;
+}
+a {
+	text-decoration: none;
+}
+/*Columns Styles*/
+
+.columna1 {
+	float: left;
+	margin-top: 8px;
+	margin-left: 35px;
+	text-align: center;
+	-ms-transform: rotate(2deg); /* IE 9 */
+	-webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+	transform: rotate(2deg);
+	width: 90px;
+}
+.etiqueta {
+	display: inline-block;
+	margin-left: 3px;
+}
+.text1 {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 40px;
+	color: #fff;
+	font-weight: bold;
+}
+.text4 {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 25px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 0px;
+}
+.text5 {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 14px;
+	color: #fff;
+	line-height: 5px;
+}
+.columna1_eng {
+	float: left;
+	margin-top: 12px;
+	margin-left: 27px;
+	text-align: center;
+	-ms-transform: rotate(2deg); /* IE 9 */
+	-webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+	transform: rotate(2deg);
+	width: 90px;
+}
+.etiqueta_eng {
+	display: inline-block;
+	margin-right: 3px;
+}
+.text1_eng {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 40px;
+	color: #fff;
+	font-weight: bold;
+}
+.text4_eng {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 25px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 0px;
+}
+.text5_eng {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 18px;
+	color: #fff;
+	line-height: 5px;
+}
+.columna2 {
+	float: left;
+	width: 80px;
+	margin-top: 28px;
+}
+.columna3 {
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+	width: 280px;
+}
+.special {
+	font-family: "Roboto Slab", serif;
+	font-size: 30px;
+	color: #455560;
+}
+.special_it {
+	font-family: "Roboto Slab", serif;
+	font-size: 29px;
+	color: #455560;
+}
+.special_ru {
+	font-family: "Roboto Slab", serif;
+	font-size: 25px;
+	color: #455560;
+}
+.text2 {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 18px;
+	color: #455560;
+	text-align: center;
+}
+.columna4 {
+	float: left;
+	margin-left: 25px;
+	margin-top: 15px;
+	width: 170px;
+}
+.columna4_ru {
+	float: left;
+	margin-left: 25px;
+	margin-top: 10px;
+	width: 170px;
+}
+/*Button Styles*/
+
+.button {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	background-color: #07bbe4;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+}
+.button_ru {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	background-color: #07bbe4;
+	width: 150px;
+	text-align: center;
+	padding: 5px;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 18px;
+}
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+}
+.button:hover {
+	background-color: #06A7CB;
+}
+.button_red {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	background-color: #DE2C3C;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+}
+.button_red span {
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+}
+.button_red:hover {
+	background-color: #b5000f;
+}
+/************************************ BANNER EXTENSION 6M ************************************************/
+
+.bn-generico_new_banner_upgrade {
+	overflow: hidden;
+	position: relative;
+	width: 698px;
+	height: 70px;
+	background-image: url(http://abaenglish.emsecure.net/images/banners/backgroundupgrade.png);
+	background-repeat: no-repeat;
+}
+.ocultar_upgrade {
+	display: none;
+}
+/*Columns Styles*/
+.columna1_upgrade {
+	float: left;
+	margin-top: 12px;
+	margin-left: 27px;
+	text-align: center;
+	-ms-transform: rotate(2deg); /* IE 9 */
+	-webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+	transform: rotate(2deg);
+	width: 90px;
+}
+.columna1_upgrade_mexico {
+	float: left;
+	margin-top: 15px;
+	margin-left: 27px;
+	text-align: center;
+	-ms-transform: rotate(2deg); /* IE 9 */
+	-webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+	transform: rotate(2deg);
+	width: 90px;
+}
+.columna1_upgrade_brasil {
+	float: left;
+	margin-top: 15px;
+	margin-left: 27px;
+	text-align: center;
+	-ms-transform: rotate(2deg); /* IE 9 */
+	-webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+	transform: rotate(2deg);
+	width: 90px;
+}
+.etiqueta_upgrade {
+	display: inline-block;
+	text-decoration: none;
+	width: 90px;
+}
+.text1_upgrade {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 30px;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 32px;
+}
+.text1_upgrade_brasil {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 22px;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+.text1_upgrade_mexico {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 22px;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+.divisa_mxn {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+.text4_upgrade {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 25px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 0px;
+	text-decoration: none;
+}
+.text5_upgrade {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 13px;
+	color: #fff;
+	text-decoration: none;
+	line-height: 20px;
+}
+.columna2_upgrade {
+	float: left;
+	width: 50px;
+	margin-top: 28px;
+}
+.columna3_upgrade {
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+	width: 340px;
+}
+.special_upgrade {
+	font-family: "Roboto Slab", serif;
+	font-size: 22px;
+	color: #455560;
+}
+.text2_upgrade {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 15px;
+	color: #455560;
+	text-align: center;
+	line-height: 30px;
+}
+.columna4_upgrade {
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+	width: 150px;
+}
+/*Button Styles*/
+
+.button_upgrade {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	background-color: #07bbe4;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+	font-size: 15px;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+}
+.button_upgrade span {
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+}
+.button_upgrade:hover {
+	background-color: #06A7CB;
+}
+/**************** BANNER ABA MOMENTS  ***************/
+
+.bn-generico_none {
+	overflow: hidden;
+	position: relative;
+	width: 698px;
+	height: 70px;
+}
+.ocultar_moment {
+	display: none;
+}
+/*Columns Styles*/
+
+.columna1_moment {
+	float: left;
+	margin-top: 4px;
+	margin-left: 15px;
+	text-align: center;
+	width: 300px;
+}
+.text1_moment {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	color: #42505a;
+	font-weight: 300;
+	text-decoration: none;
+	line-height: 30px;
+	text-align: left;
+}
+.small_r {
+	font-size: 14px;
+	vertical-align: super;
+}
+.text4_moment {
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 17px;
+	color: #42505a;
+	font-weight: 600;
+	line-height: 15px;
+	text-decoration: none;
+	text-align: left;
+}
+
+.text4_moment_fr {
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 15px;
+	color: #42505a;
+	font-weight: 600;
+	line-height: 15px;
+	text-decoration: none;
+	text-align: left;
+}
+.text5_moment {
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 13px;
+	color: #fff;
+	text-decoration: none;
+	line-height: 20px;
+}
+.columna2_moment {
+	float: left;
+	width: 50px;
+	margin-top: 28px;
+}
+.columna3_moment {
+	float: left;
+	margin-top: 3px;
+	text-align: center;
+	width: 200px;
+}
+.image_moment {
+	float: left;
+	padding: 5px;
+}
+.text2_moment {
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 15px;
+	color: #455560;
+	text-align: center;
+	line-height: 30px;
+}
+.columna4_moment {
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+	width: 150px;
+}
+/*Button Styles*/
+
+.button_moment {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	background-color: #404b53;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+	font-size: 15px;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+}
+.button_moment span {
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+}
+.button_moment:hover {
+	background-color: #06A7CB;
+}
