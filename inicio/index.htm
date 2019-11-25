@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>Ingenieria Social</title>
+  <title>Página principal IS</title>
   <link rel="icon" type="image/png" href="imagenes_inicio/LogoIngSoci.png"/>
   <link rel="stylesheet"  href="./css/header.css">
   <link rel="stylesheet"  href="./css/font-awesome.min.css">
@@ -15,27 +15,29 @@
   <link rel="stylesheet"  href="./css/stylebanner.css">
   <link rel="stylesheet"  href="./css/jquery.fancybox.css">
   <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="./css/margenes.css">
   <style type="text/css">.fancybox-margin{margin-right:15px;}</style>
 </head>
 <body>
 <header class="header">
     <div class="container"> 
         <div class="header-title">
-            <h2>Ataques de Ingeniería Social</h2>
+            <h1>Ataques de Ingeniería Social</h1>
         </div>
         <nav class="menu">
           <ol>
-            <li>
-              <a  class="link" href="index.htm">Home</a>
+            <!-- <li>
+              <a  class="link" href="index.htm">Inicio</a>
             </li>
             <li>
-              <a  class="link" href="../videos/videos.htm">Clases</a>
+              <a  class="link" href="../videos/videos.htm">VideoClases</a>
             </li>
             <li>
               <a class="link" href="">Ayuda</a>
-            </li>
+            </li> -->
             <li>
-              <a class="link" href="">Salir</a>
+              <a id="avatar" class="link" href="#">Salir</a>
+              
             </li>
            </ol>
         </nav>
@@ -94,7 +96,7 @@
                     </div>
                     <div class="columna4_moment">
                         <a href="file:///Users/zilikos/Documents/Tesis%20Nueva/Servidor/ExamenPreInicial/index.html">
-                            <div class="button_moment"><span>EXAMEN INCIAL</span>
+                            <div class="button_moment"><span>EXAMEN INICIAL</span>
                             </div>
                         </a>
                     </div>
@@ -112,7 +114,7 @@
           <li> <a id="idUlCourse" href="#">Examen Inicial</a></li>
           <li> <a id="idUlVideos" href="../videos/videos.htm">Videoclases</a></li>
            <li> <a id="idUlGrammar" href="#">Examen Final</a></li>
-          <li> <a target="_blank" onclick="javascript: sendDefaultEventToTracker(&#39;OPENED_HELP&#39;);" href="#">Centro de ayuda</a></li>
+          <li> <a target="_blank" onclick="javascript: sendDefaultEventToTracker(&#39;OPENED_HELP&#39;);" href="#">Ayuda</a></li>
         </ul>           
       <div class="clear"></div>
         <a class="leftMenu_mgm" href="">Más información</a>
@@ -133,7 +135,7 @@
       
 <div id="wrapperDinamicContent">
     <div id="unitNumber">Unit 49</div>
-    <h3> <span>¡Hola Estudiante!</span><br>Continúa tu aprendizaje sobre Ingeniería social</h3>
+    <h3> <span id="avatar" >¡Hola Estudiante!</span><br>Continúa tu aprendizaje sobre Ingeniería social</h3>
     <div id="imageWrapper">
         <a href=""><img src="./imagenes_inicio/049_unit_clean.png" alt="Clase Imagen"></a>
     </div>
@@ -230,7 +232,7 @@
                 <ul>
                     <li>Soporte</li>
                     <li><a href="">Contacto</a></li>
-                    <li><a target="_blank" href="#">Centro de ayuda</a></li>
+                    <li><a target="_blank" href="#">Ayuda</a></li>
                 </ul>
                 <ul>
                     <li>Recursos</li>
@@ -248,5 +250,25 @@
     </div>
 </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+
+<script defer src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+
+<script defer src="https://www.gstatic.com/firebasejs/6.6.0/firebase-auth.js"></script>
+
+
+
+<!--build:js js/main.min.js -->
+<script type="text/javascript" src="js/config/ConfigFirebase.js"></script>
+<script type="text/javascript" src="js/util/util.js"></script>
+<script type="text/javascript" src="js/post/post.js"></script>
+<script type="text/javascript" src="js/general.js"></script>
+<script type="text/javascript" src="js/auth/autenticacion.js"></script>
+<script type="text/javascript" src="js/auth/authController.js"></script>
+<script type="text/javascript" src="js/post/postController.js"></script>
+
 </body>
 </html>
