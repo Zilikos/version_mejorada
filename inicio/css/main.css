@@ -132,7 +132,7 @@ p{
     width: 225px;
 }
 #mainMenu .dropdown-menu li a{
-    color: #44545f;
+    color: #dbd148;
     padding-left: 21px;
     text-decoration: none;
     font-size: 13px;
@@ -7268,7 +7268,7 @@ div#mgmWidget > iframe, div#mgmWidget > object {
     z-index: 100;
 }
 .leftMenu_mgm {
-    background-color: #0397d6;
+    background-color: #0D0D5A;
     color: #ffffff;
     display: block;
     font: normal normal 14px/36px "MuseoSans500Regular";
@@ -7278,7 +7278,7 @@ div#mgmWidget > iframe, div#mgmWidget > object {
     text-indent: 0;
 }
 a.leftMenu_mgm:hover {
-    background-color: #0388d6;
+    background-color: #3A5FD3;
     cursor: pointer;
 }
 .leftMenu_mgm span.icon-mgm-plus {

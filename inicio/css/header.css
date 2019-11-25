@@ -12,6 +12,13 @@ header{
     height: inherit;
 }
 
+
+.header-title h1{
+    position: relative;
+    font-size: 20px;
+     top: 35%;    /* con esto estoy aliniedno al titul  */
+}
+
 .header-title h2{
     position: relative;
     font-size: 20px;

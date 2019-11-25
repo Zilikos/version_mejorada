@@ -688,7 +688,7 @@ a {
 .button_moment {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
-	background-color: #07bbe4;
+	background-color: #0D0D5A ;
 	width: 150px;
 	text-align: center;
 	padding: 10px;
@@ -704,5 +704,5 @@ a {
 	text-decoration: none;
 }
 .button_moment:hover {
-	background-color: #06A7CB;
+	background-color: #3A5FD3;
 }
