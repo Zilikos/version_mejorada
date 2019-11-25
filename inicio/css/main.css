@@ -99,6 +99,16 @@ p{
     position: relative;
     margin-bottom: 10px;
 }
+
+
+a {
+    text-decoration:none;
+    /* border-bottom: 2px solid #ef8b80; */
+    /* box-shadow: inset 0 -4px 0 #ef8b80; */
+    color: inherit;
+    transition: background 0.1s cubic-bezier(.33,.66,.66,1);
+  }
+
 .cmp_blockLeft{
     width: 225px;
 }
@@ -5081,7 +5091,8 @@ div.containerIndexImagesLine1 > div{
 div.videoClassContainer > a, .progressContainer a, .certificateContainer a, .readyConatiner a, .opinionConatiner a{
     font-family: 'proxima_nova_rgregular';
     font-size: 14px;
-    color: #0098d5;
+    /* this is the one */
+    color: ##0D0D5A;  
     text-decoration: none;
     margin: 12px 0 23px 2px;
     display: block;
@@ -5188,7 +5199,7 @@ div.subContainerLeftLine2SubTitle{
     border-bottom: 1px dotted #cdccca;
     font-family: 'MuseoSans500Regular';
     font-size: 14px;
-    color: #455560;
+    color: #000105;
 }
 div.subContainerLeftLine2NewMessages{
     height: 29px;
@@ -5198,17 +5209,17 @@ div.subContainerLeftLine2NewMessages{
     border-bottom: 1px dashed #cdccca;
 }
 div.subContainerLeftLine2NewMessages > span{
-    color: #758089;
+    color: ##0D0D5A;
     font-family: 'MuseoSans500Regular';
     font-size: 14px;
 }
 div.subContainerLeftLine2NewMessages > a{
     font-family: 'MuseoSans500Regular';
     font-size: 14px;
-    color: #0397d6;
+    color: #0D0D5A;
 }
 div.messagesConatiner > a{
-    color: #0397d6;
+    color: #0D0D5A;
     font-size: 14px;
     font-family: 'MuseoSans500Regular';
     text-decoration: none;
@@ -5239,7 +5250,7 @@ div.containerLine3{
 div.containerLine3 > a{
     font-family: 'MuseoSans500Regular';
     font-size: 14px;
-    color: #0397d6;
+    color: #0D0D5A;
     text-decoration: none;
     display: block;
     margin: 10px 0 0 21px;
@@ -5258,7 +5269,7 @@ div.subContainerLine4{
 div.subContainerLine4 > p{
     font-family: 'MuseoSans500Regular';
     font-size: 14px;
-    color: #455560;
+    color: #0D0D5A;
     padding: 0;
     line-height: 20px;
     margin: 16px 0 7px 24px;
@@ -8350,7 +8361,7 @@ a.courseTeacherBTN {
 
 .btn-linkedin-column {
     padding: 8px 10px 8px 10px;
-    background-color: #2F7CBC;
+    background-color: #0D0D5A;
     color: #FFFFFF;
     font-family: 'MuseoSans500Regular';
     font-size: 14px;
